@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-bt6z
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/abhindas-tenant/devfile-sample/devfile-sample-bt6z@sha256:c881bfe5aa29a2894b72cd89dfe54b09992b7b4ac2c56b414c28f48109fe1e04
+        name: my-nodejs
+        resources: {}
+status: {}
